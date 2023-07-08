@@ -1,6 +1,5 @@
-# Project Name
-
-Welcome to Project Name! This project is a tool built in Go that allows you to retrieve the IP address or server name of a website. It provides two commands, `ip` and `servers`, along with a `--host` parameter for specifying the website. This document will guide you on how to build, run, and utilize the commands.
+# Ip Search
+Welcome to  Ip Search! This project is a tool built in Go that allows you to retrieve the IP address or server name of a website. It provides two commands, `ip` and `servers`, along with a `--host` parameter for specifying the website. This document will guide you on how to build, run, and utilize the commands.
 
 ## Prerequisites
 
