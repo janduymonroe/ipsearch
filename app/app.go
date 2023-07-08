@@ -40,10 +40,10 @@ func Generate() *cli.App {
 func findIps(c *cli.Context) {
 	host := c.String("host")
 
-	ips, error := net.LookupIP(host)
+	ips, errors := net.LookupIP(host)
 
-	if error != nil {
-		log.Fatal(error)
+	if errors != nil {
+		log.Fatal(errors)
 	}
 
 	fmt.Println("Host Ips:\n")
@@ -56,10 +56,10 @@ func findIps(c *cli.Context) {
 func findServers(c *cli.Context) {
 	host := c.String("host")
 
-	servers, error := net.LookupNS(host)
+	servers, errors := net.LookupNS(host)
 
-	if error != nil {
-		log.Fatal(error)
+	if errors != nil {
+		log.Fatal(errors)
 	}
 
 	fmt.Println("Servers Name:\n")
